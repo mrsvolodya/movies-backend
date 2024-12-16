@@ -1,31 +1,22 @@
-const express = require("express");
-const path = require("path");
-const fs = require("fs");
-
+import express from "express";
+import { router as _router, defaults } from "json-server";
+import cors from "cors";
 const app = express();
-const port = process.env.PORT || 5000;
 
-// Відкриваємо файл db.json
-const dbPath = path.join(__dirname, "../db.json");
-let dbData = JSON.parse(fs.readFileSync(dbPath, "utf-8"));
+// Вказуємо шлях до db.json
+const router = _router("db.json");
+const middlewares = defaults();
 
-// Налаштовуємо парсинг JSON
-app.use(express.json());
+// Додаємо CORS для доступу до API
+app.use(cors());
 
-// Отримати всі фільми
-app.get("/api/movies", (req, res) => {
-  res.json(dbData.movies);
-});
+// Використовуємо стандартні middleware
+app.use(middlewares);
 
-// Додати новий фільм
-app.post("/api/movies", (req, res) => {
-  const newMovie = req.body;
-  dbData.movies.push(newMovie);
-  fs.writeFileSync(dbPath, JSON.stringify(dbData, null, 2), "utf-8");
-  res.status(201).json(newMovie);
-});
+// Вказуємо, що маршрут /movies пов'язаний з json-server
+app.use("/movies", router);
 
-// Запуск серверу
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+// Запускаємо сервер на порту 10000 (для Render)
+app.listen(10000, () => {
+  console.log("Server is running on http://localhost:10000");
 });
