@@ -1,0 +1,213 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Inception",
+      "image": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_FMjpg_UX700_.jpg",
+      "rating": 8.8,
+      "releaseDate": "2010-07-16",
+      "description": "A mind-bending thriller by Christopher Nolan about dream invasion.",
+      "actors": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page"],
+      "director": "Christopher Nolan",
+      "genre": "Science Fiction, Thriller"
+    },
+    {
+      "id": 2,
+      "title": "Interstellar",
+      "image": "https://m.media-amazon.com/images/M/MV5BYzdjMDAxZGItMjI2My00ODA1LTlkNzItOWFjMDU5ZDJlYWY3XkEyXkFqcGc@._V1_FMjpg_UY3600_.jpg",
+      "rating": 8.6,
+      "releaseDate": "2014-11-07",
+      "description": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+      "actors": ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"],
+      "director": "Christopher Nolan",
+      "genre": "Science Fiction, Drama"
+    },
+    {
+      "id": 3,
+      "title": "The Dark Knight",
+      "image": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UY2048_.jpg",
+      "rating": 9.0,
+      "releaseDate": "2008-07-18",
+      "description": "Batman faces the Joker, a criminal mastermind who seeks to create chaos in Gotham City.",
+      "actors": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
+      "director": "Christopher Nolan",
+      "genre": "Action, Crime, Drama"
+    },
+    {
+      "id": 4,
+      "title": "The Shawshank Redemption",
+      "image": "https://m.media-amazon.com/images/M/MV5BMDAyY2FhYjctNDc5OS00MDNlLThiMGUtY2UxYWVkNGY2ZjljXkEyXkFqcGc@._V1_QL75_UX380_CR0,4,380,562_.jpg",
+      "rating": 9.3,
+      "releaseDate": "1994-09-22",
+      "description": "Two imprisoned men form a deep bond over several years, finding solace and eventual redemption through acts of common decency.",
+      "actors": ["Tim Robbins", "Morgan Freeman", "Bob Gunton"],
+      "director": "Frank Darabont",
+      "genre": "Drama"
+    },
+    {
+      "id": 5,
+      "title": "The Godfather",
+      "image": "https://m.media-amazon.com/images/M/MV5BYTJkNGQyZDgtZDQ0NC00MDM0LWEzZWQtYzUzZDEwMDljZWNjXkEyXkFqcGc@._V1_FMjpg_UY1982_.jpg",
+      "rating": 9.2,
+      "releaseDate": "1972-03-24",
+      "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+      "actors": ["Marlon Brando", "Al Pacino", "James Caan"],
+      "director": "Francis Ford Coppola",
+      "genre": "Crime, Drama"
+    },
+    {
+      "id": 6,
+      "title": "Forrest Gump",
+      "image": "https://m.media-amazon.com/images/M/MV5BZGY1NDllYjgtMzg1NS00YWMwLTkxYzgtM2I1MjU0MmMyNzA2XkEyXkFqcGc@._V1_FMjpg_UX500_.jpg",
+      "rating": 8.8,
+      "releaseDate": "1994-07-06",
+      "description": "The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal and other historical events unfold from the perspective of an Alabama man with an extraordinary life story.",
+      "actors": ["Tom Hanks", "Robin Wright", "Gary Sinise"],
+      "director": "Robert Zemeckis",
+      "genre": "Drama, Romance"
+    },
+    {
+      "id": 7,
+      "title": "The Matrix",
+      "image": "https://m.media-amazon.com/images/M/MV5BN2NmN2VhMTQtMDNiOS00NDlhLTliMjgtODE2ZTY0ODQyNDRhXkEyXkFqcGc@._V1_FMjpg_UY3156_.jpg",
+      "rating": 8.7,
+      "releaseDate": "1999-03-31",
+      "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+      "actors": ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"],
+      "director": "The Wachowskis",
+      "genre": "Action, Science Fiction"
+    },
+    {
+      "id": 8,
+      "title": "Fight Club",
+      "image": "https://m.media-amazon.com/images/M/MV5BOTgyOGQ1NDItNGU3Ny00MjU3LTg2YWEtNmEyYjBiMjI1Y2M5XkEyXkFqcGc@._V1_FMjpg_UX1066_.jpg",
+      "rating": 8.8,
+      "releaseDate": "1999-10-15",
+      "description": "An insomniac office worker forms an underground fight club with soap salesman Tyler Durden.",
+      "actors": ["Brad Pitt", "Edward Norton", "Helena Bonham Carter"],
+      "director": "David Fincher",
+      "genre": "Drama"
+    },
+    {
+      "id": 9,
+      "title": "The Lord of the Rings: The Return of the King",
+      "image": "https://m.media-amazon.com/images/M/MV5BMTZkMjBjNWMtZGI5OC00MGU0LTk4ZTItODg2NWM3NTVmNWQ4XkEyXkFqcGc@._V1_FMjpg_UX800_.jpg",
+      "rating": 8.9,
+      "releaseDate": "2003-12-17",
+      "description": "Gandalf and Aragorn lead the World of Men against Sauron to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+      "actors": ["Elijah Wood", "Viggo Mortensen", "Ian McKellen"],
+      "director": "Peter Jackson",
+      "genre": "Action, Adventure, Drama"
+    },
+    {
+      "id": 10,
+      "title": "The Empire Strikes Back",
+      "image": "https://m.media-amazon.com/images/M/MV5BMTkxNGFlNDktZmJkNC00MDdhLTg0MTEtZjZiYWI3MGE5NWIwXkEyXkFqcGc@._V1_FMjpg_UY2883_.jpg",
+      "rating": 8.7,
+      "releaseDate": "1980-05-21",
+      "description": "Luke Skywalker begins Jedi training with Yoda, while his friends are pursued by Darth Vader and the Empire.",
+      "actors": ["Mark Hamill", "Harrison Ford", "Carrie Fisher"],
+      "director": "Irvin Kershner",
+      "genre": "Action, Adventure, Fantasy"
+    },
+    {
+      "id": 11,
+      "title": "Gladiator",
+      "image": "https://m.media-amazon.com/images/M/MV5BMWYzZTM5ZGQtOGE5My00NmM2LWFlMDEtMGNjYjdmOWM1MzA1XkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+      "rating": 8.5,
+      "releaseDate": "2000-05-05",
+      "description": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
+      "actors": ["Russell Crowe", "Joaquin Phoenix", "Connie Nielsen"],
+      "director": "Ridley Scott",
+      "genre": "Action, Adventure, Drama"
+    },
+    {
+      "id": 12,
+      "title": "The Lion King",
+      "image": "https://m.media-amazon.com/images/M/MV5BYjBkOWUwODYtYWI3YS00N2I0LWEyYTktOTJjM2YzOTc3ZDNlXkEyXkFqcGc@._V1_FMjpg_UX864_.jpg",
+      "rating": 8.5,
+      "releaseDate": "1994-06-24",
+      "description": "A young lion prince flees his kingdom only to learn the true meaning of responsibility and bravery.",
+      "actors": ["Matthew Broderick", "Jeremy Irons", "James Earl Jones"],
+      "director": "Roger Allers, Rob Minkoff",
+      "genre": "Animation, Adventure, Drama"
+    },
+    {
+      "id": 13,
+      "title": "Back to the Future",
+      "image": "https://m.media-amazon.com/images/M/MV5BZmM3ZjE0NzctNjBiOC00MDZmLTgzMTUtNGVlOWFlOTNiZDJiXkEyXkFqcGc@._V1_FMjpg_UX1218_.jpg",
+      "rating": 8.5,
+      "releaseDate": "1985-07-03",
+      "description": "A teenager is sent 30 years into the past in a time-traveling DeLorean invented by his close friend, the eccentric scientist Dr. Emmett Brown.",
+      "actors": ["Michael J. Fox", "Christopher Lloyd", "Lea Thompson"],
+      "director": "Robert Zemeckis",
+      "genre": "Adventure, Comedy, Science Fiction"
+    },
+    {
+      "id": 14,
+      "title": "The Dark Knight Rises",
+      "image": "https://m.media-amazon.com/images/M/MV5BMTk4ODQzNDY3Ml5BMl5BanBnXkFtZTcwODA0NTM4Nw@@._V1_FMjpg_UX486_.jpg",
+      "rating": 8.4,
+      "releaseDate": "2012-07-20",
+      "description": "Eight years after the events of The Dark Knight, a new foe, Bane, emerges to challenge Batman.",
+      "actors": ["Christian Bale", "Tom Hardy", "Anne Hathaway"],
+      "director": "Christopher Nolan",
+      "genre": "Action, Thriller"
+    },
+    {
+      "id": 15,
+      "title": "Pulp Fiction",
+      "image": "https://m.media-amazon.com/images/M/MV5BYTViYTE3ZGQtNDBlMC00ZTAyLTkyODMtZGRiZDg0MjA2YThkXkEyXkFqcGc@._V1_FMjpg_UX1055_.jpg",
+      "rating": 8.9,
+      "releaseDate": "1994-10-14",
+      "description": "The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+      "actors": ["John Travolta", "Uma Thurman", "Samuel L. Jackson"],
+      "director": "Quentin Tarantino",
+      "genre": "Crime, Drama"
+    },
+    {
+      "id": 16,
+      "title": "Schindler's List",
+      "image": "https://m.media-amazon.com/images/M/MV5BYmJlMjNkZWQtODgyMi00MjExLWI2MDMtZjk2MTU5YjI1YTljXkEyXkFqcGc@._V1_FMjpg_UX606_.jpg",
+      "rating": 9.0,
+      "releaseDate": "1993-12-15",
+      "description": "In German-occupied Poland during World War II, Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
+      "actors": ["Liam Neeson", "Ben Kingsley", "Ralph Fiennes"],
+      "director": "Steven Spielberg",
+      "genre": "Biography, Drama, History"
+    },
+    {
+      "id": 17,
+      "title": "The Godfather: Part II",
+      "image": "https://m.media-amazon.com/images/M/MV5BNzc1OWY5MjktZDllMi00ZDEzLWEwMGItYjk1YmRhYjBjNTVlXkEyXkFqcGc@._V1_FMjpg_UY2552_.jpg",
+      "rating": 9.0,
+      "releaseDate": "1974-12-20",
+      "description": "The early life and career of Vito Corleone are shown, while his son Michael expands and tightens his grip on the family crime syndicate.",
+      "actors": ["Al Pacino", "Robert De Niro", "Marlon Brando"],
+      "director": "Francis Ford Coppola",
+      "genre": "Crime, Drama"
+    },
+    {
+      "id": 18,
+      "title": "The Prestige",
+      "image": "https://m.media-amazon.com/images/M/MV5BMjA4NDI0MTIxNF5BMl5BanBnXkFtZTYwNTM0MzY2._V1_FMjpg_UX450_.jpg",
+      "rating": 8.5,
+      "releaseDate": "2006-10-20",
+      "description": "Two magicians engage in a bitter rivalry, with each trying to outdo the other in an attempt to create the ultimate illusion.",
+      "actors": ["Christian Bale", "Hugh Jackman", "Scarlett Johansson"],
+      "director": "Christopher Nolan",
+      "genre": "Drama, Mystery, Sci-Fi"
+    },
+    {
+      "id": 19,
+      "title": "The Departed",
+      "image": "https://m.media-amazon.com/images/M/MV5BMTI1MTY2OTIxNV5BMl5BanBnXkFtZTYwNjQ4NjY3._V1_FMjpg_UX450_.jpg",
+      "rating": 8.5,
+      "releaseDate": "2006-10-06",
+      "description": "An undercover cop and a mole in the police force try to identify each other while infiltrating an Irish gang in Boston.",
+      "actors": ["Leonardo DiCaprio", "Matt Damon", "Jack Nicholson"],
+      "director": "Martin Scorsese",
+      "genre": "Crime, Drama, Thriller"
+    }
+  ]
+}
