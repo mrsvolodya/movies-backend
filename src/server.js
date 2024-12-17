@@ -1,11 +1,16 @@
+const movieData = require("../db.json");
 const express = require("express");
 const app = express();
 app.get("/", (req, res) => {
   res.send("hello word!");
 });
 
+app.get("/movies", (req, res) => {
+  res.json(movieData);
+});
+
 app.listen(3000, () => {
-  console.log("Hi, APP IS LISTENING!");
+  console.log("Hi, APP IS LISTENING! http://localhost:3000");
 });
 
 // const cors = require("cors");
