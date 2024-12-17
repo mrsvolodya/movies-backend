@@ -41,7 +41,7 @@ app.patch("movies/:id", (req, res) => {
   const { id } = req.params;
   const movieIndex = movieData.findIndex((movie) => movie.id === parseInt(id));
 
-  if (findIndex !== -1) {
+  if (movieIndex !== -1) {
     const {
       title,
       image,
