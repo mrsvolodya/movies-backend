@@ -86,6 +86,32 @@ app.patch("/movies/:id", (req, res) => {
   return res.status(404).json({ message: "Movie not found" });
 });
 
+app.post("/movies", (req, res) => {
+  const data = req.body;
+
+  if (
+    !data.title &&
+    !data.image &&
+    !data.rating &&
+    !data.releaseDate &&
+    !data.description &&
+    !data.actors &&
+    !data.director &&
+    !data.genre
+  ) {
+    return res.status(400).json({ message: "Not all data provided" });
+  }
+
+  const newMovie = {
+    ...data,
+    id: movieData.length ? movieData[movieData.length - 1].id + 1 : 1,
+  };
+
+  movieData.push(newMovie);
+
+  return res.status(201).json(newMovie);
+});
+
 app.listen(3000, () => {
   console.log("APP IS LISTENING! http://localhost:3000");
 });
