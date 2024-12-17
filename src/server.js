@@ -12,18 +12,17 @@ app.get("/movies", (req, res) => {
   res.json(movieData);
 });
 
-app.listen(3000, () => {
-  console.log("Hi, APP IS LISTENING! http://localhost:3000");
+app.get("/movies/:id", (req, res) => {
+  const { id } = req.params;
+  const movie = movieData.find((movie) => movie.id === parseInt(id));
+
+  if (movie) {
+    res.json(movie);
+  } else {
+    res.status(404).json({ message: "Movie not found" });
+  }
 });
 
-// const cors = require("cors");
-// const jsonServer = require("json-server");
-// const router = jsonServer.router("db.json");
-// const middlewares = jsonServer.defaults();
-
-// app.use(cors());
-// app.use(middlewares);
-// app.use("/movies", router);
-// app.listen(10000, () => {
-//   console.log("Server is running on http://localhost:10000");
-// });
+app.listen(3000, () => {
+  console.log("APP IS LISTENING! http://localhost:3000");
+});
