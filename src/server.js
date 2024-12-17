@@ -37,7 +37,7 @@ app.delete("/movies/:id", (req, res) => {
   return res.status(404).json({ message: "Movie not found" });
 });
 
-app.patch("movies/:id", (req, res) => {
+app.patch("/movies/:id", (req, res) => {
   const { id } = req.params;
   const movieIndex = movieData.findIndex((movie) => movie.id === parseInt(id));
 
