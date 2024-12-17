@@ -23,6 +23,18 @@ app.get("/movies/:id", (req, res) => {
   }
 });
 
+app.delete("/movie/:id", (req, res) => {
+  const { id } = req.params;
+  const movieIndex = movieData.findIndex((movie) => movie.id === parseInt(id));
+
+  if (movieIndex !== -1) {
+    movieData.splice(movieIndex, 1);
+    return res.status(200).json({ message: "Movie deleted successfully" });
+  }
+
+  return res.status(404).json({ message: "Movie not found" });
+});
+
 app.listen(3000, () => {
   console.log("APP IS LISTENING! http://localhost:3000");
 });
