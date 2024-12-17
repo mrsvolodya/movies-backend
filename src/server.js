@@ -4,8 +4,9 @@ const cors = require("cors");
 const app = express();
 
 app.use(cors());
+
 app.get("/", (req, res) => {
-  res.send("hello word!");
+  res.send("This is API for Movies DB!");
 });
 
 app.get("/movies", (req, res) => {
@@ -23,8 +24,9 @@ app.get("/movies/:id", (req, res) => {
   }
 });
 
-app.delete("/movie/:id", (req, res) => {
+app.delete("/movies/:id", (req, res) => {
   const { id } = req.params;
+  console.log(id);
   const movieIndex = movieData.findIndex((movie) => movie.id === parseInt(id));
 
   if (movieIndex !== -1) {
