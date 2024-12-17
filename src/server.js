@@ -53,6 +53,19 @@ app.patch("/movies/:id", (req, res) => {
       genre,
     } = req.body;
 
+    if (
+      !title &&
+      !image &&
+      !rating &&
+      !releaseDate &&
+      !description &&
+      !actors &&
+      !director &&
+      !genre
+    ) {
+      return res.status(400).json({ message: "No update data provided" });
+    }
+
     const updateMovie = {
       ...movieData[movieIndex],
       title: title || movieData[movieIndex].title,
