@@ -1,7 +1,13 @@
 import fs from "fs";
 import path from "path";
-const dbPath = path.resolve("db/db.json");
-const db = JSON.parse(fs.readFileSync(dbPath, "utf8"));
+const filePath = path.resolve("src/db/db.json");
+console.log(filePath);
+
+if (!fs.existsSync(filePath)) {
+  console.error(`File not found: ${filePath}`);
+}
+
+const db = JSON.parse(fs.readFileSync(filePath, "utf-8"));
 
 export const getAll = () => {
   return db;
