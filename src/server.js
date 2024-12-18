@@ -5,6 +5,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+
 app.get("/", (req, res) => {
   res.send("This is API for Movies DB!");
 });
@@ -37,7 +38,7 @@ app.delete("/movies/:id", (req, res) => {
   return res.status(404).json({ message: "Movie not found" });
 });
 
-app.patch("/movies/:id", (req, res) => {
+app.put("/movies/:id", (req, res) => {
   const { id } = req.params;
   const movieIndex = movieData.findIndex((movie) => movie.id === parseInt(id));
 
