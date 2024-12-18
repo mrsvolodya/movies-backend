@@ -1,18 +1,54 @@
 import fs from "fs";
 import path from "path";
+import uuidv4 from "uuidv4";
+
 const filePath = path.resolve("src/db/db.json");
-console.log(filePath);
 
 if (!fs.existsSync(filePath)) {
   console.error(`File not found: ${filePath}`);
+  process.exit(1);
 }
 
-const db = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+let moviesDb = [];
+
+try {
+  const movies = fs.readFileSync(filePath, "utf-8");
+  moviesDb = JSON.parse(movies);
+} catch (error) {
+  console.error("Error reading or parsing the db.json file:", error);
+  process.exit(1);
+}
 
 export const getAll = () => {
-  return db;
+  return moviesDb;
 };
 
 export const getById = (id) => {
-  return db.find((movie) => movie.id === parseInt(id)) || null;
+  return moviesDb.find((movie) => movie.id === parseInt(id)) || null;
+};
+
+export const addMovie = (movie) => {
+  if (
+    !movie.title ||
+    !movie.image ||
+    !movie.rating ||
+    !movie.releaseDate ||
+    !movie.description ||
+    !movie.actors ||
+    !movie.director ||
+    !movie.genre
+  ) {
+    return null;
+  }
+
+  const newMovie = {
+    ...movie,
+    id: uuidv4(),
+  };
+
+  movie.push(newMovie);
+
+  fs.writeFileSync(filePath, JSON.stringify(movie, null, 2), "utf-8");
+
+  return newMovie;
 };

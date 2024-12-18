@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import * as moviesService from "./movie.services.js";
+
 const app = express();
 
 app.use(cors());
@@ -18,11 +19,23 @@ app.get("/movies/:id", (req, res) => {
   const { id } = req.params;
   const movie = moviesService.getById(id);
 
-  if (movie) {
-    res.json(movie);
-  } else {
+  if (!movie) {
     res.status(404).json({ message: "Movie not found" });
   }
+
+  res.send(movie);
+});
+
+app.post("/movies", (req, res) => {
+  const data = req.body;
+
+  const newMovie = addMovie(data);
+
+  if (!newMovie) {
+    return res.status(400).json({ message: "Not all data provided" });
+  }
+
+  return res.status(201).json(newMovie);
 });
 
 app.delete("/movies/:id", (req, res) => {
@@ -84,32 +97,6 @@ app.patch("/movies/:id", (req, res) => {
   }
 
   return res.status(404).json({ message: "Movie not found" });
-});
-
-app.post("/movies", (req, res) => {
-  const data = req.body;
-
-  if (
-    !data.title &&
-    !data.image &&
-    !data.rating &&
-    !data.releaseDate &&
-    !data.description &&
-    !data.actors &&
-    !data.director &&
-    !data.genre
-  ) {
-    return res.status(400).json({ message: "Not all data provided" });
-  }
-
-  const newMovie = {
-    ...data,
-    id: db.length ? db[db.length - 1].id + 1 : 1,
-  };
-
-  db.push(newMovie);
-
-  return res.status(201).json(newMovie);
 });
 
 app.listen(3000, () => {
