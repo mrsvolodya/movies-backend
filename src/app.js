@@ -1,7 +1,8 @@
 import express from "express";
 import cors from "cors";
-import db from "./db/db.json" assert { type: "json" };
+import fs from "fs";
 import * as moviesService from "./movie.services.js";
+const db = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
 const app = express();
 
 app.use(cors());
