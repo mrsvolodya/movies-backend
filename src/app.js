@@ -1,7 +1,7 @@
-const express = require("express");
-const cors = require("cors");
-const db = require("./db/db.json");
-const moviesService = require("./movie.services.js");
+import express from "express";
+import cors from "cors";
+import db from "./db/db.json" assert { type: "json" };
+import * as moviesService from "./movie.services.js";
 const app = express();
 
 app.use(cors());

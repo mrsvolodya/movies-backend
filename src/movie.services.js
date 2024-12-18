@@ -1,4 +1,4 @@
-const db = require("../db.json");
+import db from "./db/db.json" assert { type: "json" };
 
 export const getAll = () => {
   return db;
