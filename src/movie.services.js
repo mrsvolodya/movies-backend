@@ -1,5 +1,7 @@
 import fs from "fs";
-const db = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
+import path from "path";
+const dbPath = path.resolve("db/db.json");
+const db = JSON.parse(fs.readFileSync(dbPath, "utf8"));
 
 export const getAll = () => {
   return db;
