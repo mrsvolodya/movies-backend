@@ -1,4 +1,5 @@
-import db from "./db/db.json" assert { type: "json" };
+import fs from "fs";
+const db = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
 
 export const getAll = () => {
   return db;

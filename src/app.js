@@ -1,8 +1,6 @@
 import express from "express";
 import cors from "cors";
-import fs from "fs";
 import * as moviesService from "./movie.services.js";
-const db = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
 const app = express();
 
 app.use(cors());
