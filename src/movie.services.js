@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import uuidv4 from "uuidv4";
+import { v4 as uuidv4 } from "uuidv4";
 
 const filePath = path.resolve("src/db/db.json");
 
