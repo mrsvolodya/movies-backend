@@ -27,7 +27,7 @@ export const getById = (id) => {
   return moviesDb.find((movie) => movie.id === parseInt(id)) || null;
 };
 
-export const addMovie = (movie) => {
+export const createMovie = (movie) => {
   if (
     !movie.title ||
     !movie.image ||
