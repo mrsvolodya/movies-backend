@@ -1,4 +1,4 @@
-const movieData = require("../db.json");
+const movieData = require("./db/db.json");
 const express = require("express");
 const cors = require("cors");
 const app = express();
