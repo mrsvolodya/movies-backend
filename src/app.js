@@ -28,7 +28,7 @@ app.get("/movies/:id", (req, res) => {
 
 app.post("/movies", (req, res) => {
   const movie = req.body;
-  const newMovie = addMovie(movie);
+  const newMovie = createMovie(movie);
 
   if (!newMovie) {
     return res.status(400).json({ message: "Not all data provided" });
