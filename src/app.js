@@ -1,7 +1,6 @@
-import express from "express";
-import cors from "cors";
-import * as moviesService from "./movie.services.js";
-const db = require("./db/db.json");
+const movieData = require("../db.json");
+const express = require("express");
+const cors = require("cors");
 const app = express();
 
 app.use(cors());
@@ -12,26 +11,27 @@ app.get("/", (req, res) => {
 });
 
 app.get("/movies", (req, res) => {
-  res.send(moviesService.getAll());
+  res.json(movieData);
 });
 
 app.get("/movies/:id", (req, res) => {
   const { id } = req.params;
-  const movie = moviesService.getById(id);
+  const movie = movieData.find((movie) => movie.id === parseInt(id));
 
-  if (!movie) {
+  if (movie) {
+    res.json(movie);
+  } else {
     res.status(404).json({ message: "Movie not found" });
   }
-
-  res.send(movie);
 });
 
 app.delete("/movies/:id", (req, res) => {
   const { id } = req.params;
-  const movieIndex = db.findIndex((movie) => movie.id === parseInt(id));
+  console.log(id);
+  const movieIndex = movieData.findIndex((movie) => movie.id === parseInt(id));
 
   if (movieIndex !== -1) {
-    db.splice(movieIndex, 1);
+    movieData.splice(movieIndex, 1);
     return res.status(200).json({ message: "Movie deleted successfully" });
   }
 
@@ -40,7 +40,7 @@ app.delete("/movies/:id", (req, res) => {
 
 app.patch("/movies/:id", (req, res) => {
   const { id } = req.params;
-  const movieIndex = db.findIndex((movie) => movie.id === parseInt(id));
+  const movieIndex = movieData.findIndex((movie) => movie.id === parseInt(id));
 
   if (movieIndex !== -1) {
     const {
@@ -68,18 +68,18 @@ app.patch("/movies/:id", (req, res) => {
     }
 
     const updateMovie = {
-      ...db[movieIndex],
-      title: title || db[movieIndex].title,
-      image: image || db[movieIndex].image,
-      rating: rating || db[movieIndex].rating,
-      releaseDate: releaseDate || db[movieIndex].releaseDate,
-      description: description || db[movieIndex].description,
-      actors: actors || db[movieIndex].actors,
-      director: director || db[movieIndex].director,
-      genre: genre || db[movieIndex].genre,
+      ...movieData[movieIndex],
+      title: title || movieData[movieIndex].title,
+      image: image || movieData[movieIndex].image,
+      rating: rating || movieData[movieIndex].rating,
+      releaseDate: releaseDate || movieData[movieIndex].releaseDate,
+      description: description || movieData[movieIndex].description,
+      actors: actors || movieData[movieIndex].actors,
+      director: director || movieData[movieIndex].director,
+      genre: genre || movieData[movieIndex].genre,
     };
 
-    db[movieIndex] = updateMovie;
+    movieData[movieIndex] = updateMovie;
 
     return res.status(200).json(updateMovie);
   }
@@ -105,10 +105,10 @@ app.post("/movies", (req, res) => {
 
   const newMovie = {
     ...data,
-    id: db.length ? db[db.length - 1].id + 1 : 1,
+    id: movieData.length ? movieData[movieData.length - 1].id + 1 : 1,
   };
 
-  db.push(newMovie);
+  movieData.push(newMovie);
 
   return res.status(201).json(newMovie);
 });
