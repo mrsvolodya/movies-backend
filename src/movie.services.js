@@ -27,7 +27,7 @@ export const getById = (id) => {
   return moviesDb.find((movie) => movie.id === parseInt(id)) || null;
 };
 
-export const createMovie = (movie) => {
+export const addMovie = (movie) => {
   if (
     !movie.title ||
     !movie.image ||
@@ -46,7 +46,9 @@ export const createMovie = (movie) => {
     id: uuidv4(),
   };
 
-  fs.writeFileSync(filePath, JSON.stringify(newMovie, null, 2), "utf-8");
+  movie.push(newMovie);
+
+  fs.writeFileSync(filePath, JSON.stringify(movie, null, 2), "utf-8");
 
   return newMovie;
 };
