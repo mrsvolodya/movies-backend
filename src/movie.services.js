@@ -1,7 +1,6 @@
 import fs from "fs";
 import path from "path";
-import pkg from "uuidv4";
-const { v4: uuidv4 } = pkg;
+import { v4 as uuidv4 } from "uuid";
 
 const filePath = path.resolve("src/db/db.json");
 
