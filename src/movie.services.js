@@ -46,9 +46,19 @@ export const addMovie = (movie) => {
     id: uuidv4(),
   };
 
-  movie.push(newMovie);
-
-  fs.writeFileSync(filePath, JSON.stringify(movie, null, 2), "utf-8");
+  fs.writeFileSync(filePath, JSON.stringify(newMovie, null, 2), "utf-8");
 
   return newMovie;
+};
+
+export const deleteMovieById = (id) => {
+  const movieIndex = moviesDb.findIndex((movie) => movie.id === id);
+
+  if (movieIndex !== -1) {
+    moviesDb.splice(movieIndex, 1);
+    saveDatabase(db);
+    return true;
+  }
+
+  return false;
 };

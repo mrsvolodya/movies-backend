@@ -3,7 +3,6 @@ import cors from "cors";
 import * as moviesService from "./movie.services.js";
 
 const app = express();
-
 app.use(cors());
 app.use(express.json());
 
@@ -21,15 +20,15 @@ app.get("/movies/:id", (req, res) => {
 
   if (!movie) {
     res.status(404).json({ message: "Movie not found" });
+    return;
   }
 
   res.send(movie);
 });
 
 app.post("/movies", (req, res) => {
-  const data = req.body;
-
-  const newMovie = addMovie(data);
+  const movie = req.body;
+  const newMovie = addMovie(movie);
 
   if (!newMovie) {
     return res.status(400).json({ message: "Not all data provided" });
