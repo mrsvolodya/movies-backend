@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "title": "Inception",
     "image": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_FMjpg_UX700_.jpg",
     "rating": 8.8,
@@ -11,7 +11,7 @@
     "genre": "Science Fiction, Thriller"
   },
   {
-    "id": 2,
+    "id": "2",
     "title": "Interstellar",
     "image": "https://m.media-amazon.com/images/M/MV5BYzdjMDAxZGItMjI2My00ODA1LTlkNzItOWFjMDU5ZDJlYWY3XkEyXkFqcGc@._V1_FMjpg_UY3600_.jpg",
     "rating": 8.6,
@@ -22,7 +22,7 @@
     "genre": "Science Fiction, Drama"
   },
   {
-    "id": 3,
+    "id": "3",
     "title": "The Dark Knight",
     "image": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UY2048_.jpg",
     "rating": 9.0,
@@ -33,7 +33,7 @@
     "genre": "Action, Crime, Drama"
   },
   {
-    "id": 4,
+    "id": "4",
     "title": "The Shawshank Redemption",
     "image": "https://m.media-amazon.com/images/M/MV5BMDAyY2FhYjctNDc5OS00MDNlLThiMGUtY2UxYWVkNGY2ZjljXkEyXkFqcGc@._V1_QL75_UX380_CR0,4,380,562_.jpg",
     "rating": 9.3,
@@ -44,7 +44,7 @@
     "genre": "Drama"
   },
   {
-    "id": 5,
+    "id": "5",
     "title": "The Godfather",
     "image": "https://m.media-amazon.com/images/M/MV5BYTJkNGQyZDgtZDQ0NC00MDM0LWEzZWQtYzUzZDEwMDljZWNjXkEyXkFqcGc@._V1_FMjpg_UY1982_.jpg",
     "rating": 9.2,
@@ -55,7 +55,7 @@
     "genre": "Crime, Drama"
   },
   {
-    "id": 6,
+    "id": "6",
     "title": "Forrest Gump",
     "image": "https://m.media-amazon.com/images/M/MV5BZGY1NDllYjgtMzg1NS00YWMwLTkxYzgtM2I1MjU0MmMyNzA2XkEyXkFqcGc@._V1_FMjpg_UX500_.jpg",
     "rating": 8.8,
@@ -66,7 +66,7 @@
     "genre": "Drama, Romance"
   },
   {
-    "id": 7,
+    "id": "7",
     "title": "The Matrix",
     "image": "https://m.media-amazon.com/images/M/MV5BN2NmN2VhMTQtMDNiOS00NDlhLTliMjgtODE2ZTY0ODQyNDRhXkEyXkFqcGc@._V1_FMjpg_UY3156_.jpg",
     "rating": 8.7,
@@ -77,7 +77,7 @@
     "genre": "Action, Science Fiction"
   },
   {
-    "id": 8,
+    "id": "8",
     "title": "Fight Club",
     "image": "https://m.media-amazon.com/images/M/MV5BOTgyOGQ1NDItNGU3Ny00MjU3LTg2YWEtNmEyYjBiMjI1Y2M5XkEyXkFqcGc@._V1_FMjpg_UX1066_.jpg",
     "rating": 8.8,
@@ -88,7 +88,7 @@
     "genre": "Drama"
   },
   {
-    "id": 9,
+    "id": "9",
     "title": "The Lord of the Rings: The Return of the King",
     "image": "https://m.media-amazon.com/images/M/MV5BMTZkMjBjNWMtZGI5OC00MGU0LTk4ZTItODg2NWM3NTVmNWQ4XkEyXkFqcGc@._V1_FMjpg_UX800_.jpg",
     "rating": 8.9,
@@ -99,7 +99,7 @@
     "genre": "Action, Adventure, Drama"
   },
   {
-    "id": 10,
+    "id": "10",
     "title": "The Empire Strikes Back",
     "image": "https://m.media-amazon.com/images/M/MV5BMTkxNGFlNDktZmJkNC00MDdhLTg0MTEtZjZiYWI3MGE5NWIwXkEyXkFqcGc@._V1_FMjpg_UY2883_.jpg",
     "rating": 8.7,
@@ -110,7 +110,7 @@
     "genre": "Action, Adventure, Fantasy"
   },
   {
-    "id": 11,
+    "id": "11",
     "title": "Gladiator",
     "image": "https://m.media-amazon.com/images/M/MV5BMWYzZTM5ZGQtOGE5My00NmM2LWFlMDEtMGNjYjdmOWM1MzA1XkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
     "rating": 8.5,
@@ -121,7 +121,7 @@
     "genre": "Action, Adventure, Drama"
   },
   {
-    "id": 12,
+    "id": "12",
     "title": "The Lion King",
     "image": "https://m.media-amazon.com/images/M/MV5BYjBkOWUwODYtYWI3YS00N2I0LWEyYTktOTJjM2YzOTc3ZDNlXkEyXkFqcGc@._V1_FMjpg_UX864_.jpg",
     "rating": 8.5,
@@ -132,7 +132,7 @@
     "genre": "Animation, Adventure, Drama"
   },
   {
-    "id": 13,
+    "id": "13",
     "title": "Back to the Future",
     "image": "https://m.media-amazon.com/images/M/MV5BZmM3ZjE0NzctNjBiOC00MDZmLTgzMTUtNGVlOWFlOTNiZDJiXkEyXkFqcGc@._V1_FMjpg_UX1218_.jpg",
     "rating": 8.5,
@@ -143,7 +143,7 @@
     "genre": "Adventure, Comedy, Science Fiction"
   },
   {
-    "id": 14,
+    "id": "14",
     "title": "The Dark Knight Rises",
     "image": "https://m.media-amazon.com/images/M/MV5BMTk4ODQzNDY3Ml5BMl5BanBnXkFtZTcwODA0NTM4Nw@@._V1_FMjpg_UX486_.jpg",
     "rating": 8.4,
@@ -154,7 +154,7 @@
     "genre": "Action, Thriller"
   },
   {
-    "id": 15,
+    "id": "15",
     "title": "Pulp Fiction",
     "image": "https://m.media-amazon.com/images/M/MV5BYTViYTE3ZGQtNDBlMC00ZTAyLTkyODMtZGRiZDg0MjA2YThkXkEyXkFqcGc@._V1_FMjpg_UX1055_.jpg",
     "rating": 8.9,
@@ -165,7 +165,7 @@
     "genre": "Crime, Drama"
   },
   {
-    "id": 16,
+    "id": "16",
     "title": "Schindler's List",
     "image": "https://m.media-amazon.com/images/M/MV5BYmJlMjNkZWQtODgyMi00MjExLWI2MDMtZjk2MTU5YjI1YTljXkEyXkFqcGc@._V1_FMjpg_UX606_.jpg",
     "rating": 9.0,
@@ -176,7 +176,7 @@
     "genre": "Biography, Drama, History"
   },
   {
-    "id": 17,
+    "id": "17",
     "title": "The Godfather: Part II",
     "image": "https://m.media-amazon.com/images/M/MV5BNzc1OWY5MjktZDllMi00ZDEzLWEwMGItYjk1YmRhYjBjNTVlXkEyXkFqcGc@._V1_FMjpg_UY2552_.jpg",
     "rating": 9.0,
@@ -187,7 +187,7 @@
     "genre": "Crime, Drama"
   },
   {
-    "id": 18,
+    "id": "18",
     "title": "The Prestige",
     "image": "https://m.media-amazon.com/images/M/MV5BMjA4NDI0MTIxNF5BMl5BanBnXkFtZTYwNTM0MzY2._V1_FMjpg_UX450_.jpg",
     "rating": 8.5,
@@ -198,7 +198,7 @@
     "genre": "Drama, Mystery, Sci-Fi"
   },
   {
-    "id": 19,
+    "id": "19",
     "title": "The Departed",
     "image": "https://m.media-amazon.com/images/M/MV5BMTI1MTY2OTIxNV5BMl5BanBnXkFtZTYwNjQ4NjY3._V1_FMjpg_UX450_.jpg",
     "rating": 8.5,
