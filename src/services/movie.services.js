@@ -22,8 +22,6 @@ const writeMoviesToFile = (movies) => {
   }
 };
 
-const moviesDb = readMoviesFromFile();
-
 export const getAll = () => readMoviesFromFile();
 
 export const getById = (id) => {
@@ -31,6 +29,7 @@ export const getById = (id) => {
 };
 
 export const create = (movie) => {
+  const moviesDb = readMoviesFromFile();
   const newMovie = { id: uuidv4(), ...movie };
 
   moviesDb.push(newMovie);
@@ -40,6 +39,7 @@ export const create = (movie) => {
 };
 
 export const update = (id, movie) => {
+  const moviesDb = readMoviesFromFile();
   const movieIndex = moviesDb.findIndex((movie) => movie.id === id);
 
   const updateMovie = {
@@ -54,6 +54,7 @@ export const update = (id, movie) => {
 };
 
 export const remove = (id) => {
+  const moviesDb = readMoviesFromFile();
   const updatedMovies = moviesDb.filter((movie) => movie.id !== id);
 
   writeMoviesToFile(updatedMovies);
